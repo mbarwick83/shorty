@@ -36,5 +36,15 @@
     },
     "scripts": {
         "test": "phpunit"
-    }
+    },
+    "extra": {
+        "laravel": {
+          "providers": [
+            "Mbarwick83\\Shorty\\ShortyServiceProvider"
+          ],
+          "aliases": {
+            "Shorty": "Mbarwick83\\Shorty\\Facades\\Shorty"
+          }
+        }
+      }
 }

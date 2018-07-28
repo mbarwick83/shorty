@@ -14,6 +14,7 @@ To install, run the following in your project directory
 $ composer require mbarwick83/shorty
 ```
 
+#### Laravel < 5.5 
 Then in `config/app.php` add the following to the `providers` array:
 
 ```
@@ -25,6 +26,10 @@ Also in `config/app.php`, add the Facade class to the `aliases` array:
 ```
 'Shorty'    => Mbarwick83\Shorty\Facades\Shorty::class
 ```
+
+#### Laravel >= 5.5
+
+There is no need to modify `config/app.php` since the provider and alias will be picked up through auto discover.
 
 ## Configuration
 
